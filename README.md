@@ -1,6 +1,6 @@
 # Workflow Computations
 
-This repository is intended to store and be used as a reference library for any useful workflow computation as well as their related C# scripts, workflow diagram screenshots, etc.
+This repository is intended to store and be used as a reference library for any useful workflow computation as well as their related C# scripts, use cases that solves, workflow diagram screenshots or any other relevant information.
 
 Therefore, the aim is to document:
 - Basic or generic computations that others can easily search for and reuse 
