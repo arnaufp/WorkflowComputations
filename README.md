@@ -10,3 +10,4 @@ Geometry
 - [Reproject from WGS84 (Alloy CRS)](Geometry/Reproject%20from%20WGS84.md)
 - [Reproject to WGS84 (Alloy CRS)](Geometry/Reproject%20to%20WGS84.md)
 - [Create geometries from XY coordinates](Geometry/Create%20geometries%20from%20XY%20coordinates.md)
+- [Merge geometries into a Geometry Collection](Geometry/Merge%20geometries%20into%20a%20Geometry%20Collection.md)
