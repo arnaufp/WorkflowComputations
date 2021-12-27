@@ -12,3 +12,4 @@ Geometry
 - [Create geometries from XY coordinates](Geometry/Create%20geometries%20from%20XY%20coordinates.md)
 - [Merge geometries into a Geometry Collection](Geometry/Merge%20geometries%20into%20a%20Geometry%20Collection.md)
 - [Get X & Y coordinates](Geometry/Get%20X%20%26%20Y%20coordinates.md)
+- [Polygon to LineString](Geometry/Polygon%20to%20LineString.md)
