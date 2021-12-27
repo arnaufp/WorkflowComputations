@@ -12,5 +12,5 @@ Geometry
 - [Create geometries from XY coordinates](Geometry/Create%20geometries%20from%20XY%20coordinates.md)
 - [Merge geometries into a Geometry Collection](Geometry/Merge%20geometries%20into%20a%20Geometry%20Collection.md)
 - [Get X & Y coordinates from a point](Geometry/Get%20X%20&%20Y%20coordinates%20from%20a%20point.md)
-- [Get X & Y coordinates from other geometry types](Geometry/Get%20X%20&%20Y%20coordinates%20from%20other%20geometry%20types.md)
+- [Get X & Y coordinates from other geometry types (Centroid)](Geometry/Get%20X%20&%20Y%20coordinates%20from%20other%20geometry%20types.md)
 - [Polygon to LineString](Geometry/Polygon%20to%20LineString.md)
