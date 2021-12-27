@@ -1,4 +1,4 @@
-# Get X & Y coordinates
+# Get X & Y coordinates from a point
 
 Get and store X (longitude, easting, etc.) and Y (latitude, northing, etc.) coordinates from an input geomtry into 2 number attributes.
 
