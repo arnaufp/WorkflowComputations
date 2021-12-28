@@ -37,3 +37,4 @@ Given an Alloy DateTime attribute, get the day of the week and save it in a text
 - If it has a value, we can get it with "reportedDateTime.Value" 
 - ".ToString("dddd") converts the DateTime into a string. 
 - "dddd" represents the full name of the day
+- Other C# date and time formats can be found here ([standard](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings) and [custom](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings)) 
