@@ -6,9 +6,6 @@ Convert a Polygon to a LineString and save it back to attributes_itemsGeometry
 
 ```json
 {
-    "actionDesignCode": "designs_workflowEditItemAction",
-    "ancestorId": "6156e6684afe6501595d29e2",
-    "signature": "61c9bb77473e49015b2e748a",
     "parameters": [
         {
             "attributeCode": "attributes_itemsGeometry",
