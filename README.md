@@ -6,8 +6,9 @@ Therefore, the aim is to document:
 - Basic or generic computations that others can easily search for and reuse 
 - As well as more bespoke solutions that could be slightly changed to be reused by other customers
 
-### Basic Copy & Pate Syntax
+### Basic Syntax (copy & paste)
 - [Variables](Basic%20Syntax/Variables.md)
+- [Parameters](Basic%20Syntax/Parameters.md)
 
 ### Geometry
 - [Reproject from WGS84 (Alloy CRS)](Geometry/Reproject%20from%20WGS84.md)
