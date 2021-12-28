@@ -18,3 +18,4 @@ Therefore, the aim is to document:
 - [Get X & Y coordinates from a point](Geometry/Get%20X%20&%20Y%20coordinates%20from%20a%20point.md)
 - [Get X & Y coordinates from other geometry types (Centroid)](Geometry/Get%20X%20&%20Y%20coordinates%20from%20other%20geometry%20types.md)
 - [Polygon to LineString](Geometry/Polygon%20to%20LineString.md)
+- [Area & Length](Geometry/Area%20%26%20Length.md)
