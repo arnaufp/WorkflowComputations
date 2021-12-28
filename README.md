@@ -22,3 +22,4 @@ Therefore, the aim is to document:
 - [Query items intersecting an item](Geometry/Query%20items%20intersecting%20an%20item.md)
 
 ### Date & Time
+- [DateTime attribute to day of the week](Dates/DateTime%20attribute%20to%20day%20of%20the%20week.md)
