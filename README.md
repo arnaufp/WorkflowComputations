@@ -23,3 +23,4 @@ Therefore, the aim is to document:
 
 ### Date & Time
 - [DateTime attribute to day of the week](Dates/DateTime%20attribute%20to%20day%20of%20the%20week.md)
+- [DateTime attribute to Date and Time attributes](Dates/DateTime%20attribute%20to%20Date%20and%20Time%20attributes.md)
