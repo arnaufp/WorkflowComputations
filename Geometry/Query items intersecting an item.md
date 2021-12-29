@@ -88,7 +88,7 @@ Afterwards the asset is assigned to a specific maintenance team based on the war
     ]
 }
 ```
-#### Explanation of C# objects, methods, etc. s
+#### Explanation of C# objects, methods, etc.
 - An AQS variable is used for this purpose where the itemId of the input asset is used as AQS parameter.
 - The "valueFromItemAttribute" type enables us to use an attribute (e.g. geometry) from the input asset within the query.
 - The AQS variable stores the array of Alloy Item Ids returned by the query
