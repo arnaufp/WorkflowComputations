@@ -32,7 +32,7 @@ Given an Alloy DateTime attribute, get the day of the week and save it in a text
     ]
 }
 ```
-#### Explanation of C# objects, methods, etc. s
+#### Explanation of C# objects, methods, etc.
 - "reportedDateTime" is a **DateTime?** C# object (a nullable DateTime)
 - If it has a value, we can get it with "reportedDateTime.Value" 
 - ".ToString("dddd") converts the DateTime into a string. 
