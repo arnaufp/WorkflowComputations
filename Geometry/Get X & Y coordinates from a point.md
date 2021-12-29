@@ -56,7 +56,7 @@ The [GeoJSON.Net](https://github.com/GeoJSON-Net/GeoJSON.Net) library available 
     ]
 }
 ```
-#### Explanation of C# objects, methods, etc. s
+#### Explanation of C# objects, methods, etc.
 - "geometryWGS84" is a **IGeometryObject** C# object
 - With "as GeoJSON.Net.Geometry.Point" we explicitly cast/convert from **IGeometryObject** (any geometry) to a **Point**.
 In order for this to work you need to make sure that the input geometry is a point.
