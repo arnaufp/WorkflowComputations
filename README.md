@@ -6,7 +6,7 @@ Therefore, the aim is to document:
 - Basic or generic computations that others can easily search for and reuse 
 - As well as more bespoke solutions that could be slightly changed to be reused by other customers
 
-### Basic Syntax (copy & paste & do)
+### Basic Syntax (copy/paste & go)
 - [Variables](Basic%20Syntax/Variables.md)
 - [Parameters](Basic%20Syntax/Parameters.md)
 
