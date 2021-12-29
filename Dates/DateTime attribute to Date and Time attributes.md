@@ -54,7 +54,7 @@ Given an Alloy DateTime attribute convert it and store it as Date and Time attri
     ]
 }
 ```
-#### Explanation of C# objects, methods, etc. s
+#### Explanation of C# objects, methods, etc.
 - "Date(**DateTime**)" converts a **DateTime** to **AlloyEngine.DataModels.Date** C# object
 - "Time(**DateTime**)" converts a **DateTime** to **AlloyEngine.DataModels.Time** C# object
 - Date Alloy attributes expect to receive **AlloyEngine.DataModels.Date**
