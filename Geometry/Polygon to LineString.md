@@ -38,7 +38,7 @@ Convert a Polygon to a LineString and save it back to attributes_itemsGeometry
     ]
 }
 ```
-#### Explanation of C# objects, methods, etc. s
+#### Explanation of C# objects, methods, etc.
 - "geometryWGS84" is a **IGeometryObject** C# object
 - With "as GeoJSON.Net.Geometry.Polygon" we explicitly cast/convert from **IGeometryObject** (any geometry) to a **Polygon**.
 In order for this to work you need to make sure that the input geometry is a polygon.
