@@ -11,6 +11,15 @@ To overcome this limitation a workflow computation can be configured. This must 
 
 <br/>
 
+> Variations of this example below have been used to compute offsets such as:
+>- end of next working day
+>- end of second working day
+>- next working day at 10h
+>- using different offsets configured as attribute in the Task Priorities
+>- etc.
+
+<br/>
+
 ```json
 {
     "parameters": [
@@ -95,15 +104,15 @@ To overcome this limitation a workflow computation can be configured. This must 
     ]
 }
 ```
+
 ### Requirements
 - Query Node that outputs all the items of the Holidays design (designs_holidays)
-- Business Start and End Time (harcoded in this example, though they could come from an Alloy design/item)
+- Business Start and End Time (hardcoded in this example, though they could come from an Alloy design/item)
 - As Alloy uses UTC to store DateTime attributes, business hours need to be transformed to UTC
 - Raised Time
 - Working days to offset
 
-
-#### C# script explanation
+### C# script explanation ("new_job_target_time" variable)
 ```csharp
 // init variable that will store the offseted target time
 DateTime new_job_target_time = new DateTime();
@@ -190,8 +199,3 @@ new_job_target_time = validWorkingDays.ElementAt((int)workingDays.Value-1);
 
 return new_job_target_time;
 ```
-#### Explanation of C# objects, methods, etc.
-- "Date(**DateTime**)" converts a **DateTime** to **AlloyEngine.DataModels.Date** C# object
-- "Time(**DateTime**)" converts a **DateTime** to **AlloyEngine.DataModels.Time** C# object
-- Date Alloy attributes expect to receive **AlloyEngine.DataModels.Date**
-- Time Alloy attributes expect to receive **AlloyEngine.DataModels.Time**
