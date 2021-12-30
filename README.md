@@ -20,6 +20,10 @@ Therefore, the aim is to document:
 - [Polygon to LineString](Geometry/Polygon%20to%20LineString.md)
 - [Area & Length](Geometry/Area%20%26%20Length.md)
 - [Query items intersecting an item](Geometry/Query%20items%20intersecting%20an%20item.md)
+- Buffer related
+- Bounding Box related
+- Create tree canopy geometries
+- Other conversions between different geometry types
 
 ### Date & Time
 - [DateTime attribute to day of the week](Dates/DateTime%20attribute%20to%20day%20of%20the%20week.md)
@@ -28,3 +32,18 @@ Therefore, the aim is to document:
 - [Duration between 2 DateTime attributes](Dates/Duration%20between%202%20DateTime%20attributes.md)
 - [Calculate next cyclic maintenance due dates](Dates/Calculate%20next%20cyclic%20maintenance%20due%20dates.md)
 - [Target Time = Raised Time + Working Hours Offset](Dates/Target%20Time%20=%20Raised%20Time%20+%20Working%20Days%20Offset.md)
+- Other datetime available operations, conversions, etc.
+
+### Messaging (email, sms, http requests)
+- Set HTTP Request example
+- Set multiple HTTP headers
+- Set custom email
+- Set custom sms
+
+### Others
+- Unset attributes
+- modify / manipulate a json attribute
+- Archive project once all tasks are completed
+- Task performance indicators
+- Count & send: defect counter against assets + issue emails when counter is multiple of 5
+- Compute the Carbon Footprint of operatives
