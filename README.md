@@ -27,3 +27,4 @@ Therefore, the aim is to document:
 - [DateTime attribute falls on a weekend?](Dates/DateTime%20attribute%20falls%20on%20a%20weekend%3F.md)
 - [Duration between 2 DateTime attributes](Dates/Duration%20between%202%20DateTime%20attributes.md)
 - [Calculate next cyclic maintenance due dates](Dates/Calculate%20next%20cyclic%20maintenance%20due%20dates.md)
+- [Target Time = Raised Time + Working Hours Offset](Dates/Target%20Time%20=%20Raised%20Time%20+%20Working%20Days%20Offset.md)
