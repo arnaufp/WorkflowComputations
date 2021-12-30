@@ -9,10 +9,7 @@ To overcome this limitation a workflow computation can be configured. This must 
 - Only business hours: e.g. 8h to 17h
 - Public Holidays must be taken into consideration
 
-
-
 <br/>
-
 
 ```json
 {
@@ -91,19 +88,22 @@ To overcome this limitation a workflow computation can be configured. This must 
         {
             "name": "new_job_target_time",
             "value": {
-                "script": "DateTime new_job_target_time = new DateTime(); var movedRaisedTime = job_raised_time.Value; var daysToCheck = Enumerable.Range(1, 365); var validWorkingDays = daysToCheck.Where(n=>n==1).Select(d=>new DateTime()); if(movedRaisedTime.DayOfWeek == DayOfWeek.Saturday){movedRaisedTime = movedRaisedTime.Date.AddDays(2).AddHours(businessStartHourUTC.Value);} else if(movedRaisedTime.DayOfWeek == DayOfWeek.Sunday){movedRaisedTime = movedRaisedTime.Date.AddDays(1).AddHours(businessStartHourUTC.Value);}else if(movedRaisedTime>movedRaisedTime.Date.AddHours(businessEndHourUTC.Value) && movedRaisedTime.DayOfWeek== DayOfWeek.Friday){movedRaisedTime = movedRaisedTime.Date.AddDays(3).AddHours(businessStartHourUTC.Value);} else if(movedRaisedTime>movedRaisedTime.Date.AddHours(businessEndHourUTC.Value)){movedRaisedTime = movedRaisedTime.Date.AddDays(1).AddHours(businessStartHourUTC.Value);} else if(movedRaisedTime < movedRaisedTime.Date.AddHours(businessStartHourUTC.Value)){movedRaisedTime = movedRaisedTime.Date.AddHours(businessStartHourUTC.Value);} if (movedRaisedTime==movedRaisedTime.Date.AddHours(businessStartHourUTC.Value)){validWorkingDays = daysToCheck.Where(d=>movedRaisedTime.Date.AddDays(d-1).AddHours(businessEndHourUTC.Value).DayOfWeek !=DayOfWeek.Saturday && movedRaisedTime.Date.AddDays(d-1).AddHours(businessEndHourUTC.Value).DayOfWeek !=DayOfWeek.Sunday && !Variables.bankHolidays.AllValues.Values.Select(x => x.SingleValue).Contains(Date(movedRaisedTime.Date.AddDays(d-1).AddHours(businessEndHourUTC.Value)))).Select(d => movedRaisedTime.Date.AddDays(d-1).AddHours(businessEndHourUTC.Value));} else{validWorkingDays = daysToCheck.Where(d=>movedRaisedTime.AddDays(d).DayOfWeek !=DayOfWeek.Saturday && movedRaisedTime.AddDays(d).DayOfWeek !=DayOfWeek.Sunday && !Variables.bankHolidays.AllValues.Values.Select(x => x.SingleValue).Contains( Date(movedRaisedTime.AddDays(d)))).Select(d => movedRaisedTime.AddDays(d));}; new_job_target_time = validWorkingDays.ElementAt((int)priority_quantity_of_time.Value-1); return new_job_target_time;",
+                "script": "DateTime new_job_target_time = new DateTime(); var movedRaisedTime = job_raised_time.Value; var daysToCheck = Enumerable.Range(1, 365); var validWorkingDays = daysToCheck.Where(n=>n==1).Select(d=>new DateTime()); if(movedRaisedTime.DayOfWeek == DayOfWeek.Saturday){movedRaisedTime = movedRaisedTime.Date.AddDays(2).AddHours(businessStartHourUTC.Value);} else if(movedRaisedTime.DayOfWeek == DayOfWeek.Sunday){movedRaisedTime = movedRaisedTime.Date.AddDays(1).AddHours(businessStartHourUTC.Value);}else if(movedRaisedTime>movedRaisedTime.Date.AddHours(businessEndHourUTC.Value) && movedRaisedTime.DayOfWeek== DayOfWeek.Friday){movedRaisedTime = movedRaisedTime.Date.AddDays(3).AddHours(businessStartHourUTC.Value);} else if(movedRaisedTime>movedRaisedTime.Date.AddHours(businessEndHourUTC.Value)){movedRaisedTime = movedRaisedTime.Date.AddDays(1).AddHours(businessStartHourUTC.Value);} else if(movedRaisedTime < movedRaisedTime.Date.AddHours(businessStartHourUTC.Value)){movedRaisedTime = movedRaisedTime.Date.AddHours(businessStartHourUTC.Value);} if (movedRaisedTime==movedRaisedTime.Date.AddHours(businessStartHourUTC.Value)){validWorkingDays = daysToCheck.Where(d=>movedRaisedTime.Date.AddDays(d-1).AddHours(businessEndHourUTC.Value).DayOfWeek !=DayOfWeek.Saturday && movedRaisedTime.Date.AddDays(d-1).AddHours(businessEndHourUTC.Value).DayOfWeek !=DayOfWeek.Sunday && !Variables.bankHolidays.AllValues.Values.Select(x => x.SingleValue).Contains(Date(movedRaisedTime.Date.AddDays(d-1).AddHours(businessEndHourUTC.Value)))).Select(d => movedRaisedTime.Date.AddDays(d-1).AddHours(businessEndHourUTC.Value));} else{validWorkingDays = daysToCheck.Where(d=>movedRaisedTime.AddDays(d).DayOfWeek !=DayOfWeek.Saturday && movedRaisedTime.AddDays(d).DayOfWeek !=DayOfWeek.Sunday && !Variables.bankHolidays.AllValues.Values.Select(x => x.SingleValue).Contains( Date(movedRaisedTime.AddDays(d)))).Select(d => movedRaisedTime.AddDays(d));}; new_job_target_time = validWorkingDays.ElementAt((int)workingDays.Value-1); return new_job_target_time;",
                 "discriminator": "WorkflowSyntaxNodeScriptWebModel"
             }
         }
     ]
 }
 ```
-```csharp
-var movedRaisedTime = job_raised_time.Value;
-var daysToCheck = Enumerable.Range(1, 365);
-```
+### Requirements
+- Query Node that outputs all the items of the Holidays design (designs_holidays)
+- Business Start and End Time (harcoded in this example, though they could come from an Alloy design/item)
+- As Alloy uses UTC to store DateTime attributes, business hours need to be transformed to UTC
+- Raised Time
+- Working days to offset
 
 
+#### C# script explanation
 ```csharp
 // init variable that will store the offseted target time
 DateTime new_job_target_time = new DateTime();
@@ -144,7 +144,6 @@ else if(movedRaisedTime < movedRaisedTime.Date.AddHours(businessStartHourUTC.Val
     movedRaisedTime = movedRaisedTime.Date.AddHours(businessStartHourUTC.Value);
 } 
 
-
 // At this point the Raised Time has been moved to a valid working hour
 
 /* 
@@ -183,10 +182,10 @@ else{
     );
 } 
 
-/*
-At this point the "validWorkingDays" Enumerable holds a list of valid DateTime objects e.g. Raised Time +1 working day, +2 working days, etc.
-To get the offset target time, it uses .ElementAt to return the element at a specified index (number of working days) of the enumerable
-*/
+
+//At this point the "validWorkingDays" Enumerable holds a list of valid DateTime objects e.g. Raised Time +1 working day, +2 working days, etc.
+
+//To get the offset target time, it uses .ElementAt to return the element at a specified index (number of working days) of the enumerable
 new_job_target_time = validWorkingDays.ElementAt((int)workingDays.Value-1);
 
 return new_job_target_time;
