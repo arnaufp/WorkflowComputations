@@ -149,6 +149,17 @@ Content-Length: 209
 }
 ```
 
+### Available HTTP methods and Alloy IDs
+| Method | ID |
+|----------|:-------------:|
+| GET | 5c6bd2fc4b4d4259071069df |
+| PUT | 5c6bd2fc4b4d4259071069e0 |
+| POST | 5c6bd2fc4b4d4259071069e1 |
+| DELETE | 5c6bd2fc4b4d4259071069e2 |
+| HEAD | 5c6bd2fc4b4d4259071069e3 |
+| OPTIONS | 5c6bd2fc4b4d4259071069e4 |
+| TRACE | 5c6bd2fc4b4d4259071069e5 |
+
 ### Requirements
 - Relation Node from the Job to the Status
 - Relation node from the Job to the Asset
