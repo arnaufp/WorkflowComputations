@@ -1,4 +1,4 @@
-# Configure custom email to multiple recipients
+# Issue emails to multiple recipients
 
 ### Customer request (BWC): 
 
