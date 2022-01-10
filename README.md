@@ -35,7 +35,7 @@ Therefore, the aim is to document:
 - Other datetime available operations, conversions, etc.
 
 ### Messaging (email, sms, http requests)
-- Set HTTP Request example
+- [Configure HTTP Request with dynamic payload content](Messaging/Configure%20HTTP%20Request%20with%20dynamic%20payload%20content.md)
 - Set multiple HTTP headers
 - Set custom email
 - Set custom sms
