@@ -38,8 +38,6 @@ Therefore, the aim is to document:
 - [Configure HTTP Request with dynamic payload content](Messaging/Configure%20HTTP%20Request%20with%20dynamic%20payload%20content.md)
 - [HTTP Request with multiple headers](Messaging/HTTP%20Request%20with%20multiple%20headers.md)
 - [Issue emails to multiple recipients](Messaging/Issue%20emails%20to%20multiple%20recipients.md)
-- Set custom email
-- Set custom sms
 
 ### Others
 - Unset attributes
