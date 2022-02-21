@@ -38,6 +38,7 @@ Therefore, the aim is to document:
 - [Configure HTTP Request with dynamic payload content](Messaging/Configure%20HTTP%20Request%20with%20dynamic%20payload%20content.md)
 - [HTTP Request with multiple headers](Messaging/HTTP%20Request%20with%20multiple%20headers.md)
 - [Issue emails to multiple recipients](Messaging/Issue%20emails%20to%20multiple%20recipients.md)
+- [Link multiple items from any workflow nodes to an email](Messaging/Link%20multiple%20items%20from%20any%20workflow%20nodes%20to%20an%20email.md)
 
 ### Others
 - Unset attributes
