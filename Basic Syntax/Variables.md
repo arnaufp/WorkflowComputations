@@ -46,7 +46,20 @@ JSON snippets to copy & past and quickly start setting up a new computation
     }
 }
 ```
-
+> - variable
+```json
+{
+  "name": "myVariable",
+  "value": {
+    "inputParent": 1,
+    "itemValue": {
+      "discriminator": "WorkflowSyntaxArgumentItemValueVariableWebModel",
+      "variableName": "variableOnPrecedingNode"
+    },
+    "discriminator": "WorkflowSyntaxNodeInputWebModel"
+  }
+}
+```
 <br/>
 <br/>
 
