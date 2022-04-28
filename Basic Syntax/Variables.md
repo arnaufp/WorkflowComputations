@@ -100,8 +100,8 @@ JSON snippets to copy & past and quickly start setting up a new computation
   "value": {
     "outputAction": "5f05f85cc3ca920067f1d7a0",
     "itemValue": {
-      "discriminator": "WorkflowSyntaxArgumentItemValueAttributeWebModel",
-      "attributeCode": "attributes_itemsGeometry"
+      "discriminator": "WorkflowSyntaxArgumentItemValueVariableWebModel",
+      "variableName": "variableOnOtherNode"
     },
     "discriminator": "WorkflowSyntaxNodeOutputWebModel"
   }
