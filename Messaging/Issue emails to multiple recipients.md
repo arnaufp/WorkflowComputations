@@ -1,6 +1,6 @@
 # Issue emails to multiple recipients
 
-### Customer request (BWC): 
+### Customer request: 
 
 Send email notifications to multiple email addresses (recipients)
 
