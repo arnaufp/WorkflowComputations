@@ -16,7 +16,7 @@ This requires minimum 1 design and 2 Workflow Nodes:
 4. A computed Message Node connected to the Query Node 
 
 <p align="center">
-  <img src="Messaging/query%2Bemail.png" alt="Query + Message Nodes"/>
+  <img src="query%2Bemail.png" alt="Query + Message Nodes"/> 
 </p>
 
 ```json
