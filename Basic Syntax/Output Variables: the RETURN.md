@@ -259,3 +259,177 @@ etc...
 ]
 ```
 "Variables.numbers.AllValues.Values.Sum(x => x.SingleValue);" ==> 0
+
+
+<br/>
+<br/>
+
+>## Get Text attributes
+```json
+{
+  "name": "strings",
+  "value": {
+    "outputAction": "645ce6e8f7339103742a032e",
+    "itemValue": {
+      "attributeCode": "attributes_tasksDescription",
+      "discriminator": "WorkflowSyntaxArgumentItemValueAttributeWebModel"
+    },
+    "discriminator": "WorkflowSyntaxNodeOutputWebModel"
+  }
+}
+```
+### For nodes not outputing items
+"return JToken.FromObject(**Variables.strings**).ToString();"
+```json
+{
+  "singleValue": "",
+  "allValues": {}
+}
+```
+"return JToken.FromObject(**Variables.strings.AllValues**).ToString();"
+```json
+{}
+```
+"return JToken.FromObject(**Variables.strings.AllValues.Values**).ToString();"
+```json
+[]
+```
+"Variables.numbers.AllValues.Values.Sum(x => x.SingleValue);" ==> 0
+
+### For nodes outputing items, with the text attribute populated
+"return JToken.FromObject(**Variables.strings**).ToString();"
+```json
+{
+  "singleValue": "abcdf, Hideous Pothole",
+  "allValues": {
+    "0": {
+      "singleValue": "abcdf",
+      "allValues": {
+        "0": {
+          "singleValue": "abcdf",
+          "allValues": {}
+        }
+      }
+    },
+    "1": {
+      "singleValue": "Hideous Pothole",
+      "allValues": {
+        "0": {
+          "singleValue": "Hideous Pothole",
+          "allValues": {}
+        }
+      }
+    }
+  }
+}
+```
+"return JToken.FromObject(**Variables.strings.AllValues**).ToString();"
+```json
+{
+  "0": {
+    "singleValue": "abcdf",
+    "allValues": {
+      "0": {
+        "singleValue": "abcdf",
+        "allValues": {}
+      }
+    }
+  },
+  "1": {
+    "singleValue": "Hideous Pothole",
+    "allValues": {
+      "0": {
+        "singleValue": "Hideous Pothole",
+        "allValues": {}
+      }
+    }
+  }
+}
+```
+"return JToken.FromObject(**Variables.strings.AllValues.Values**).ToString();"
+```json
+[
+  {
+    "singleValue": "abcdf",
+    "allValues": {
+      "0": {
+        "singleValue": "abcdf",
+        "allValues": {}
+      }
+    }
+  },
+  {
+    "singleValue": "Hideous Pothole",
+    "allValues": {
+      "0": {
+        "singleValue": "Hideous Pothole",
+        "allValues": {}
+      }
+    }
+  }
+]
+```
+
+### For nodes outputing items, without the string attribute populated
+"return JToken.FromObject(**Variables.strings**).ToString();"
+```json
+{
+  "singleValue": "",
+  "allValues": {
+    "0": {
+      "allValues": {
+        "0": {
+          "allValues": {}
+        }
+      }
+    },
+    "1": {
+      "allValues": {
+        "0": {
+          "allValues": {}
+        }
+      }
+    }
+  }
+}
+```
+"return JToken.FromObject(**Variables.strings.AllValues**).ToString();"
+```json
+{
+  "0": {
+    "allValues": {
+      "0": {
+        "allValues": {}
+      }
+    }
+  },
+  "1": {
+    "allValues": {
+      "0": {
+        "allValues": {}
+      }
+    }
+  }
+}
+```
+"return JToken.FromObject(**Variables.strings.AllValues.Values**).ToString();"
+```json
+[
+  {
+    "allValues": {
+      "0": {
+        "allValues": {}
+      }
+    }
+  },
+  {
+    "allValues": {
+      "0": {
+        "allValues": {}
+      }
+    }
+  }
+]
+```
+"Variables.numbers.AllValues.Values.Sum(x => x.SingleValue);" ==> 0
+
