@@ -122,7 +122,7 @@ etc...
 ```
 "Variables.numbers.AllValues.Values.Sum(x => x.SingleValue);" ==> 0
 
-### For nodes outputing items
+### For nodes outputing items, with the number attribute populated
 "return JToken.FromObject(**Variables.numbers**).ToString();"
 ```json
 {
@@ -196,3 +196,66 @@ etc...
 ]
 ```
 "Variables.numbers.AllValues.Values.Sum(x => x.SingleValue);" ==> 3.9
+
+### For nodes outputing items, without the number attribute populated
+"return JToken.FromObject(**Variables.numbers**).ToString();"
+```json
+{
+  "allValues": {
+    "0": {
+      "allValues": {
+        "0": {
+          "allValues": {}
+        }
+      }
+    },
+    "1": {
+      "allValues": {
+        "0": {
+          "allValues": {}
+        }
+      }
+    }
+  }
+}
+```
+"return JToken.FromObject(**Variables.numbers.AllValues**).ToString();"
+```json
+{
+    "0": {
+      "allValues": {
+        "0": {
+          "allValues": {}
+        }
+      }
+    },
+    "1": {
+      "allValues": {
+        "0": {
+          "allValues": {}
+        }
+      }
+    }
+  }
+}
+```
+"return JToken.FromObject(**Variables.numbers.AllValues.Values**).ToString();"
+```json
+[
+  {
+    "allValues": {
+      "0": {
+        "allValues": {}
+      }
+    }
+  },
+  {
+    "allValues": {
+      "0": {
+        "allValues": {}
+      }
+    }
+  }
+]
+```
+"Variables.numbers.AllValues.Values.Sum(x => x.SingleValue);" ==> 0
