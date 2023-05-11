@@ -236,7 +236,7 @@ etc...
         }
       }
     }
-  }
+  
 }
 ```
 "return JToken.FromObject(**Variables.numbers.AllValues.Values**).ToString();"
