@@ -1,4 +1,4 @@
-# Output Variables: returns
+# Output Variables: the RETURN
 
 Output Variables return different types of elements depending on whether you want item ids or whether you want string, number, datetime... attributes or whether the output node does not output any item
 The goal of this page is to try to list what you will get when using output variables in any of the combinations mentioned above.
