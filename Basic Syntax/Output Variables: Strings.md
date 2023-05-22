@@ -15,7 +15,7 @@
 ### For nodes not outputing items
 
 ```json
-"return JToken.FromObject(**Variables.strings**).ToString();"
+"return JToken.FromObject(Variables.strings).ToString();"
 
 {
   "singleValue": "",
@@ -24,13 +24,13 @@
 ```
 
 ```json
-"return JToken.FromObject(**Variables.strings.AllValues**).ToString();"
+"return JToken.FromObject(Variables.strings.AllValues).ToString();"
 
 {}
 ```
 
 ```json
-"return JToken.FromObject(**Variables.strings.AllValues.Values**).ToString();"
+"return JToken.FromObject(Variables.strings.AllValues.Values).ToString();"
 
 []
 ```
@@ -45,7 +45,7 @@
 ### For nodes outputing items, with the text attribute populated
 
 ```json
-"return JToken.FromObject(**Variables.strings**).ToString();"
+"return JToken.FromObject(Variables.strings).ToString();"
 
 {
   "singleValue": "abcdf, Hideous Pothole",
@@ -73,7 +73,7 @@
 ```
 
 ```json
-"return JToken.FromObject(**Variables.strings.AllValues**).ToString();"
+"return JToken.FromObject(Variables.strings.AllValues).ToString();"
 
 {
   "0": {
@@ -98,7 +98,7 @@
 ```
 
 ```json
-"return JToken.FromObject(**Variables.strings.AllValues.Values**).ToString();"
+"return JToken.FromObject(Variables.strings.AllValues.Values).ToString();"
 
 [
   {
@@ -133,7 +133,7 @@
 ### For nodes outputing items, without the string attribute populated
 
 ```json
-"return JToken.FromObject(**Variables.strings**).ToString();"
+"return JToken.FromObject(Variables.strings).ToString();"
 
 {
   "singleValue": "",
@@ -158,7 +158,7 @@
 
 
 ```json
-"return JToken.FromObject(**Variables.strings.AllValues**).ToString();"
+"return JToken.FromObject(Variables.strings.AllValues).ToString();"
 
 {
   "0": {
@@ -180,7 +180,7 @@
 
 
 ```json
-"return JToken.FromObject(**Variables.strings.AllValues.Values**).ToString();"
+"return JToken.FromObject(Variables.strings.AllValues.Values).ToString();"
 
 [
   {
