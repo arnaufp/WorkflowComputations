@@ -15,19 +15,22 @@
 ### For nodes not outputing items
 
 ```json
-//"return JToken.FromObject(**Variables.numbers**).ToString();"
+"return JToken.FromObject(Variables.numbers).ToString();"
+
 {
   "allValues": {}
 }
 ```
 
 ```json
-//"return JToken.FromObject(**Variables.numbers.AllValues**).ToString();"
+"return JToken.FromObject(Variables.numbers.AllValues).ToString();"
+
 {}
 ```
 
 ```json
-"return JToken.FromObject(**Variables.numbers.AllValues.Values**).ToString();"
+"return JToken.FromObject(Variables.numbers.AllValues.Values).ToString();"
+
 []
 ```
 "Variables.numbers.AllValues.Values.Sum(x => x.SingleValue);" ==> 0
@@ -35,7 +38,8 @@
 ### For nodes outputing items, with the number attribute populated
 
 ```json
-//"return JToken.FromObject(**Variables.numbers**).ToString();"
+"return JToken.FromObject(Variables.numbers).ToString();"
+
 {
   "singleValue": 1.5,
   "allValues": {
@@ -62,7 +66,8 @@
 ```
 
 ```json
-//"return JToken.FromObject(**Variables.numbers.AllValues**).ToString();"
+"return JToken.FromObject(Variables.numbers.AllValues).ToString();"
+
 {
   "0": {
     "singleValue": 2.4,
@@ -86,7 +91,8 @@
 ```
 
 ```json
-//"return JToken.FromObject(**Variables.numbers.AllValues.Values**).ToString();"
+"return JToken.FromObject(Variables.numbers.AllValues.Values).ToString();"
+
 [
   {
     "singleValue": 2.4,
@@ -113,7 +119,8 @@
 ### For nodes outputing items, without the number attribute populated
 
 ```json
-//"return JToken.FromObject(**Variables.numbers**).ToString();"
+"return JToken.FromObject(Variables.numbers).ToString();"
+
 {
   "allValues": {
     "0": {
@@ -135,7 +142,8 @@
 ```
 
 ```json
-//"return JToken.FromObject(**Variables.numbers.AllValues**).ToString();"
+"return JToken.FromObject(Variables.numbers.AllValues).ToString();"
+
 {
     "0": {
       "allValues": {
@@ -156,7 +164,8 @@
 ```
 
 ```json
-//"return JToken.FromObject(**Variables.numbers.AllValues.Values**).ToString();"
+"return JToken.FromObject(Variables.numbers.AllValues.Values).ToString();"
+
 [
   {
     "allValues": {
