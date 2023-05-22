@@ -15,7 +15,8 @@
 ### For nodes not outputing items
 
 ```json
-//"return JToken.FromObject(**Variables.strings**).ToString();"
+"return JToken.FromObject(**Variables.strings**).ToString();"
+
 {
   "singleValue": "",
   "allValues": {}
@@ -23,17 +24,20 @@
 ```
 
 ```json
-//"return JToken.FromObject(**Variables.strings.AllValues**).ToString();"
+"return JToken.FromObject(**Variables.strings.AllValues**).ToString();"
+
 {}
 ```
 
 ```json
-//"return JToken.FromObject(**Variables.strings.AllValues.Values**).ToString();"
+"return JToken.FromObject(**Variables.strings.AllValues.Values**).ToString();"
+
 []
 ```
 
 ```json
-//"return JToken.FromObject(Variables.strings.AllValues.Values.Select(x => x.SingleValue)).ToString();"
+"return JToken.FromObject(Variables.strings.AllValues.Values.Select(x => x.SingleValue)).ToString();"
+
 []
 ```
 "strings.Count().ToString();" ==> 0
@@ -41,7 +45,8 @@
 ### For nodes outputing items, with the text attribute populated
 
 ```json
-//"return JToken.FromObject(**Variables.strings**).ToString();"
+"return JToken.FromObject(**Variables.strings**).ToString();"
+
 {
   "singleValue": "abcdf, Hideous Pothole",
   "allValues": {
@@ -68,7 +73,8 @@
 ```
 
 ```json
-//"return JToken.FromObject(**Variables.strings.AllValues**).ToString();"
+"return JToken.FromObject(**Variables.strings.AllValues**).ToString();"
+
 {
   "0": {
     "singleValue": "abcdf",
@@ -92,7 +98,8 @@
 ```
 
 ```json
-//"return JToken.FromObject(**Variables.strings.AllValues.Values**).ToString();"
+"return JToken.FromObject(**Variables.strings.AllValues.Values**).ToString();"
+
 [
   {
     "singleValue": "abcdf",
@@ -116,7 +123,8 @@
 ```
 
 ```json
-//"return JToken.FromObject(Variables.strings.AllValues.Values.Select(x => x.SingleValue)).ToString();"
+"return JToken.FromObject(Variables.strings.AllValues.Values.Select(x => x.SingleValue)).ToString();"
+
 [
   "abcdf",
   "Hideous Pothole"
@@ -125,7 +133,8 @@
 ### For nodes outputing items, without the string attribute populated
 
 ```json
-//"return JToken.FromObject(**Variables.strings**).ToString();"
+"return JToken.FromObject(**Variables.strings**).ToString();"
+
 {
   "singleValue": "",
   "allValues": {
@@ -147,8 +156,10 @@
 }
 ```
 
+
 ```json
-//"return JToken.FromObject(**Variables.strings.AllValues**).ToString();"
+"return JToken.FromObject(**Variables.strings.AllValues**).ToString();"
+
 {
   "0": {
     "allValues": {
@@ -167,8 +178,10 @@
 }
 ```
 
+
 ```json
-//"return JToken.FromObject(**Variables.strings.AllValues.Values**).ToString();"
+"return JToken.FromObject(**Variables.strings.AllValues.Values**).ToString();"
+
 [
   {
     "allValues": {
@@ -187,8 +200,10 @@
 ]
 ```
 
+
 ```json
-//"return JToken.FromObject(Variables.strings.AllValues.Values.Select(x => x.SingleValue)).ToString();"
+"return JToken.FromObject(Variables.strings.AllValues.Values.Select(x => x.SingleValue)).ToString();"
+
 [
   null,
   null
