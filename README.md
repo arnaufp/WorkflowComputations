@@ -9,6 +9,9 @@ Therefore, the aim is to document:
 ### Basic Syntax (copy/paste & go)
 - [Variables](Basic%20Syntax/Variables.md)
 - [Parameters](Basic%20Syntax/Parameters.md)
+- [Output Variables: Item Ids](Basic%20Syntax/Output%20Variables%3A%20Item%20IDs.md)
+- [Output Variables: Strings](Basic%20Syntax/Output%20Variables%3A%20Strings.md)
+- [Output Variables: Numbers](Basic%20Syntax/Output%20Variables%3A%20Numbers.md)
 
 ### Geometry
 - [Reproject from WGS84 (Alloy CRS)](Geometry/Reproject%20from%20WGS84.md)
