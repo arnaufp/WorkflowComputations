@@ -36,6 +36,7 @@ Therefore, the aim is to document:
 - [Duration between 2 DateTime attributes](Dates/Duration%20between%202%20DateTime%20attributes.md)
 - [Calculate next cyclic maintenance due dates](Dates/Calculate%20next%20cyclic%20maintenance%20due%20dates.md)
 - [Target Time = Raised Time + Working Hours Offset](Dates/Target%20Time%20=%20Raised%20Time%20+%20Working%20Days%20Offset.md)
+- [Convert DateTime to string (with specific format)](Dates/DateTime%20to%20String%20(formats).md)
 - Other datetime available operations, conversions, etc.
 
 ### Messaging (email, sms, http requests)
