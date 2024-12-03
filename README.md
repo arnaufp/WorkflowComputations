@@ -24,7 +24,7 @@ Therefore, the aim is to document:
 - [Polygon to LineString](Geometry/Polygon%20to%20LineString.md)
 - [Area & Length](Geometry/Area%20%26%20Length.md)
 - [Query items intersecting an item](Geometry/Query%20items%20intersecting%20an%20item.md)
-- Buffer related
+- [Buffer to get closest item to another item](Geometry/Buffer%20to%20Get%20Closest%20Items.md)
 - Bounding Box related
 - Create tree canopy geometries
 - Other conversions between different geometry types
