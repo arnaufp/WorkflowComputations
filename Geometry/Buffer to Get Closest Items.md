@@ -136,7 +136,7 @@ In theses cases you can use a computed Output node with the following logic:
                       }
                     }
                   ]
-                },
+                }
               ]
             }
           ]
