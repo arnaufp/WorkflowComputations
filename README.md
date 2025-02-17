@@ -37,6 +37,7 @@ Therefore, the aim is to document:
 - [Calculate next cyclic maintenance due dates](Dates/Calculate%20next%20cyclic%20maintenance%20due%20dates.md)
 - [Target Time = Raised Time + Working Hours Offset](Dates/Target%20Time%20=%20Raised%20Time%20+%20Working%20Days%20Offset.md)
 - [Convert DateTime to string (with specific format)](Dates/DateTime%20to%20String%20(formats).md)
+- [Convert DateTime to string (blank or with specific format)](Dates/Convert%20DateTime%20to%20string%20(blank%20or%20with%20specific%20format).md)
 - Other datetime available operations, conversions, etc.
 
 ### Messaging (email, sms, http requests)
