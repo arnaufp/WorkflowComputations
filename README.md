@@ -47,7 +47,7 @@ Therefore, the aim is to document:
 - [Link multiple items from any workflow nodes to an email](Messaging/Link%20multiple%20items%20from%20any%20workflow%20nodes%20to%20an%20email.md)
 
 ### Others
-- [Check IDs + ternary conditional + string interpolation] (Others/Check%20IDs%20%2B%20ternary%20conditional%20%2B%20string%20interpolation.md)
+- [Check IDs + ternary conditional + string interpolation](Others/Check%20IDs%20%2B%20ternary%20conditional%20%2B%20string%20interpolation.md)
 - Unset attributes
 - modify / manipulate a json attribute
 - Archive project once all tasks are completed
