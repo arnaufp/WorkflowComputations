@@ -80,10 +80,26 @@ JSON snippets to copy & past and quickly start setting up a new computation
             "discriminator": "WorkflowSyntaxArgumentItemValueAttributeWebModel",
             "attributeCode": "attributes_itemsGeometry"
         },
+        "outputMode": "Input",
         "discriminator": "WorkflowSyntaxNodeOutputWebModel"
     },
     "discriminator": "WorkflowComputedItemAttributeWebModel"
 }
+```
+```json
+{
+      "attributeCode": "attributes_workflowActionAddLinksItemsCode",
+      "value": {
+        "outputAction": "6914af38044340034bab0078",
+        "itemValue": {
+          "property": "ItemId",
+          "discriminator": "WorkflowSyntaxArgumentItemValueItemPropertyWebModel"
+        },
+        "outputMode": "Input",
+        "discriminator": "WorkflowSyntaxNodeOutputWebModel"
+      },
+      "discriminator": "WorkflowComputedItemAttributeWebModel"
+    }
 ```
 > - from offset
 ```json
