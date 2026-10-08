@@ -71,6 +71,7 @@ JSON snippets to copy & past and quickly start setting up a new computation
     "name": "myVariable",
     "value": {
         "outputAction": "5f05f85cc3ca920067f1d7a0",
+        "outputMode": "Input", //"All" or "Input"
         "itemValue": {
             "discriminator": "WorkflowSyntaxArgumentItemValueAttributeWebModel",
             "attributeCode": "attributes_itemsGeometry"
