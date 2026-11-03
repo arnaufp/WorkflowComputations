@@ -38,6 +38,14 @@ See value of "attributes_workflowHttpRequestActionsHttpHeaders":
                 "discriminator": "WorkflowSyntaxNodeTemplateWebModel"
             },
             "discriminator": "WorkflowComputedItemAttributeWebModel"
+        },
+        {//template
+            "attributeCode": "attributes_workflowHttpRequestActionsHttpHeaders",
+            "value": {
+                "template": "X-API-KEY: $key\nContent-Type: application/json",
+                "discriminator": "WorkflowSyntaxNodeTemplateWebModel"
+            },
+            "discriminator": "WorkflowComputedItemAttributeWebModel"
         }
     ],
     "variables": []
